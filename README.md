@@ -15,6 +15,8 @@ Type in your plan for that time, then click the blue save button for that row, o
 You will get a message saying the event was saved under the black bar at the top of the page.
 Reload the page as much as you want, as long as you are on the same device the event saved will reappear.
 
+Project is deployed at: https://mattmrob.github.io/Work-Day-Scheduler/
+
 ![image](assets/imgs/scheduler.png)
 
 ## Credits
