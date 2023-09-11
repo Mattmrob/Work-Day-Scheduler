@@ -9,15 +9,21 @@ let hour = today.format("H");
 let hourInt = parseInt(hour);
 
 
+// Time Tracking Function!
+// Checks each time-block div's data value. The value is equal to the assigned hour in 24 hour time
+// If the value is less, equal to, or more than dayjs current time, classes change
+
 function linearTime() {
 
   $('div.time-block').each(function(){
     if ($(this).data("value") < hourInt) {
-    $(this).addClass("past");
-    console.log('it worked');
+      $(this).addClass("past");
+    } else if ($(this).data("value") === hourInt) {
+      $(this).addClass("present");
+    } else {
+      $(this).addClass("future");
     }
     console.log($(this).data("value"))
-    console.log(this)
     console.log(hourInt);
   })
 
