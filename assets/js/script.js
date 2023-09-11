@@ -8,8 +8,7 @@ const today = dayjs();
 
 let hour = today.format("H");
 let hourInt = parseInt(hour);
-
-let hourChange = hourInt;
+// ^^^^^ Converts dayjs hour string into integer for calculations
 
 // FUNCTION DECLARATION
 
