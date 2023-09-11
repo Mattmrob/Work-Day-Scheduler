@@ -2,7 +2,7 @@
 
 ## Description
 
-The Work Day Scheduler is to be an app that allows users to plan their current day. It displays the current day at the top of the page and provides several time slots for users to enter information. As time passes, slots will change color depending on if the time has passed or is currently passing.
+The Work Day Scheduler is to be an app that allows users to plan their day. It displays the current day at the top of the page and provides hourly time slots between 9am and 5pm for users to enter information. As time continues, reloading the page will cause the slots to change color depending on if the time has passed or is currently passing.
 
 ## Installation
 
@@ -10,8 +10,15 @@ N/A
 
 ## Usage
 
-N/A - the app is currently nonfunctional
+Click inside the text input between a listed time and the blue save button.
+Type in your plan for that time, then click the blue save button for that row, on the right.
+You will get a message saying the event was saved under the black bar at the top of the page.
+Reload the page as much as you want, as long as you are on the same device the event saved will reappear.
 
+![image](assets/imgs/quiz1.png)
+![image](assets/imgs/quiz2.png)
+![image](assets/imgs/quiz3.png)
+![image](assets/imgs/quiz4.png)
 
 ## Credits
 
