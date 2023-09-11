@@ -15,10 +15,7 @@ Type in your plan for that time, then click the blue save button for that row, o
 You will get a message saying the event was saved under the black bar at the top of the page.
 Reload the page as much as you want, as long as you are on the same device the event saved will reappear.
 
-![image](assets/imgs/quiz1.png)
-![image](assets/imgs/quiz2.png)
-![image](assets/imgs/quiz3.png)
-![image](assets/imgs/quiz4.png)
+![image](assets/imgs/scheduler.png)
 
 ## Credits
 
