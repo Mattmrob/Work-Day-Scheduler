@@ -42,7 +42,14 @@ $(function () {
 
   saveBtn.on('click', function(event) {
     event.preventDefault();
-    console.log($(this).siblings("textarea").val());
+
+    let textValue = $(this).siblings("textarea").val();
+    let targetId = $(this).parents("div").attr("id");
+
+    console.log(textValue);
+    console.log(targetId);
+
+    localStorage.setItem(targetId, JSON.stringify(textValue));
   })
 
 
