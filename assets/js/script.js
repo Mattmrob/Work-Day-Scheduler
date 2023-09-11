@@ -5,15 +5,11 @@
 const dateArea = $('#currentDay');
 const today = dayjs();
 
-dayjs.extend(window.dayjs_plugin_utc)
-
 $(function () {
 
   dateArea.text(today.format('dddd, MMMM DD'));
 
-  $(dateArea).append("<h4>Test</h4>");
-  $("h4").addClass('test');
-  $(".test").text(dayjs());
+  console.log(dayjs());
 
 
 
