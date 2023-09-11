@@ -1,6 +1,6 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// VARIABLES
+
+const saveBtn = $('.saveBtn');
 
 const dateArea = $('#currentDay');
 const today = dayjs();
@@ -8,6 +8,9 @@ const today = dayjs();
 let hour = today.format("H");
 let hourInt = parseInt(hour);
 
+let hourChange = hourInt;
+
+// FUNCTION DECLARATION
 
 // Time Tracking Function!
 // Checks each time-block div's data value. The value is equal to the assigned hour in 24 hour time
@@ -29,19 +32,18 @@ function linearTime() {
 
 }
 
-console.log(hourInt);
-
+// Function Execution and DOM traversal
 
 $(function () {
 
   dateArea.text(today.format('dddd, MMMM DD'));
 
-  // console.log(dayjs());
-  // console.log(hour);
-
-  // console.log($('#hour-9').data('value'));
-
   linearTime();
+
+  saveBtn.on('click', function(event) {
+    event.preventDefault();
+    console.log($(this).siblings("textarea").val());
+  })
 
 
 
