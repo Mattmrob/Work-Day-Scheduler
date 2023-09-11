@@ -5,11 +5,38 @@
 const dateArea = $('#currentDay');
 const today = dayjs();
 
+let dataValue = $('.time-block').data("value");
+let hour = $(dayjs().$H);
+
+
+
+
+function linearTime() {
+
+  $('.time-block').each(function(){
+    if ($(this).data("value") < hour) {
+      $('div').addClass('past');
+    }
+    console.log($(this).data("value"))
+    console.log(hour);
+  })
+
+}
+
+
+
+
 $(function () {
 
   dateArea.text(today.format('dddd, MMMM DD'));
 
   console.log(dayjs());
+  console.log(hour);
+
+  console.log($('#hour-9').data('value'));
+
+  linearTime();
+
 
 
 
